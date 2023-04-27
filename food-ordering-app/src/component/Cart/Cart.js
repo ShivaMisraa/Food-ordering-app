@@ -12,7 +12,10 @@ const Cart = (props) => {
   const cartItems = (
     <ul className={classes['cart-items']}>
       {cartcntx.items.map((item) => (
-        <li>Name:{item.name} Price: {item.price} Quntity:{item.quanity}</li>
+        <li className={classes.orderedFood}>
+          Meal: {item.name} Price: ${item.price} Quantity:{item.quantity}
+        <button className={classes.dltbtn} onClick={()=>cartcntx.removeItem(item.id)}>Delete</button>
+        </li>        
       ))}
     </ul>
   );

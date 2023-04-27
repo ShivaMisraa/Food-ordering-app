@@ -44,3 +44,30 @@
     background-color: #8a2b06;
     color: white;
   }
+
+  .orderedFood{
+    font-style: italic;
+    color: #561b03;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+
+  .dltbtn{
+    float: right;
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #8a2b06;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+    font-size: 14px;
+  }
+
+  .dltbtn:hover {
+    background-color: #8a2b06;
+    border-color: #fff;
+    color: #fff;
+  }

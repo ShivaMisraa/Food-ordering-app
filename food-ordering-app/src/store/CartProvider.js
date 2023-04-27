@@ -10,7 +10,14 @@ const CartProvider = (props) => {
     console.log({ item });
   };
 
-  const removeItemFromCartHandler = (id) => {};
+  const removeItemFromCartHandler = (id) => {
+    updateItems(prevItems=>{
+        const itemIndex= prevItems.findIndex(item=> item.id===id);
+        const updatedItems= [...prevItems];
+        updatedItems.splice(itemIndex, 1);
+        return updatedItems
+    })
+  };
 
   const cartContext = {
     items: items,
